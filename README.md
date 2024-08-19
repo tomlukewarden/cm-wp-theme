@@ -1,1 +1,1 @@
-# cm-wp-theme
+# Culley & McAlpine WordPress Theme
