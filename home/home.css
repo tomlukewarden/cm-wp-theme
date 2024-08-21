@@ -1,0 +1,20 @@
+header {
+  display: grid;
+  grid-template-columns: 50px 1fr 280px;
+  grid-template-areas: "Logo Space Nav";
+}
+
+h2{
+  grid-area: Logo;
+}
+
+.nav-bar{
+  grid-area: Nav;
+  margin-top: 15px;
+  /*add dropdown menu*/
+}
+
+.nav-bar-item{
+padding-right: 10px;
+
+}
