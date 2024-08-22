@@ -1,3 +1,4 @@
+/* header */
 header {
   display: grid;
   grid-template-columns: 300px 280px;
@@ -11,6 +12,7 @@ h2 {
   grid-area: Logo;
 }
 
+/* navbar */
 .navbar {
   grid-area: Nav;
   margin-top: 15px;
@@ -49,6 +51,7 @@ h2 {
   display: block;
 }
 
+/* main */
 main{
   align-self: center;
 }
@@ -63,6 +66,8 @@ main{
   display: grid;
   grid-template-columns: repeat(2, 500px);
 }
+
+/* get in touch */
 
 .get-in-touch-grid{
   display: grid;
