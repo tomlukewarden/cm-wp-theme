@@ -8,9 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="home.css" />
   </head>
+
   <body>
+    <!-- HEADER -->
     <header class="home-page-header">
       <h2>Culley & McAlpine</h2>
+
+      <!-- NAVIGATION-->
       <div class="navbar">
         <a href="#home">Home</a>
         <a href="#about">About Us</a>
@@ -31,10 +35,12 @@
       </div>
     </header>
 
+    <!-- MAIN -->
     <main class="main">
       <div class="main-image">
         <img src="./assets/header-img.jpg" alt="header image" />
       </div>
+      <!-- MAIN CONTENT -->
       <div class="main-grid">
         <div class="intro">
           <h3>Welcome to Culley & McAlpine</h3>
@@ -61,21 +67,60 @@
       </div>
     </main>
 
+    <!-- GET IN TOUCH -->
+    <section class="get-in-touch">
+      <h3>Heres how to get in touch</h3>
+      <div class="get-in-touch-grid">
+        <!-- OPENING TIMES -->
+        <div class="contact-card">
+          <h4>Open Monday to Friday</h4>
+          <p>9AM-1PM</p>
+          <p><strong>CLOSED 1PM-2PM</strong></p>
+          <p>2PM-5PM</p>
+        </div>
+        <!-- CONTACT INFORMATION -->
+        <div class="contact-card contact-grid">
+          <div class="contact-item">
+            <img src="./assets/telephone.png" alt="telephone" width="20px" />
+            <p>01738 626644</p>
+          </div>
+          <div class="contact-item">
+            <img src="./assets/fax.png" alt="fax" width="35px" />
+            <p>01738 625511</p>
+          </div>
+          <div class="contact-item">
+            <img src="./assets/mail.png" alt="email" width="30px" />
+            <p>enquires@culleymcalpine.co.uk</p>
+          </div>
+        </div>
+        <!-- ADDRESS -->
+        <div class="contact-card">
+          <h4>Address:</h4>
+          <p>40-42 South Street</p>
+          <p>Perth</p>
+          <p>PH2 8PD</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW TO FIND US -->
     <section class="how-to-find">
       <h3>How to find us</h3>
+      <!-- GOOGLE MAP -->
       <div class="google-map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2208.2216793838434!2d-3.4283305999999896!3d56.39500100000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48863b110be51be5%3A0x53a57647bc371ba3!2sCulley%20%26%20McAlpine!5e0!3m2!1sen!2suk!4v1724323271098!5m2!1sen!2suk"
           width="600"
           height="450"
           style="border: 0"
-          allowfullscreen=""
+          allowfullscreen
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
     </section>
 
+    <!-- FOOTER -->
     <footer class="home-page-footer"></footer>
   </body>
 </html>
