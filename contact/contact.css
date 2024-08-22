@@ -1,0 +1,52 @@
+/* header */
+header {
+  display: grid;
+  grid-template-columns: 300px 280px;
+  grid-template-areas: "Logo Nav";
+  margin: 30px;
+  background-color: gainsboro;
+}
+
+
+h2 {
+  grid-area: Logo;
+}
+
+/* navbar */
+.navbar {
+  grid-area: Nav;
+  margin-top: 15px;
+  overflow: hidden;
+}
+
+.navbar a, .dropdown .dropbtn, .dropdown-content a {
+  float: left;
+  font-size: 16px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+  color: black;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropdown-content a:hover {
+  background-color: red;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

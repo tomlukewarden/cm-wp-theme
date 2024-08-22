@@ -91,3 +91,9 @@ main{
   display: grid;
   grid-template-columns: 40px 100px ;
 }
+
+/* footer */
+.home-page-footer{
+  text-align: center;
+  border: 2px solid;
+}
