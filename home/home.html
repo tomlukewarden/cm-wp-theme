@@ -1,30 +1,80 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Culley & McAlpine</title>
-    <meta name="description" content="solicitor website">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="home.css">
+    <meta name="description" content="solicitor website" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="home.css" />
   </head>
-  <body>  
-    
+  <body>
     <header class="home-page-header">
-      <h2>Culley & McAlpine Solicitors</h2>
-    <nav class="nav-bar">
-      <span class="nav-bar-item">Home</span>
-      <span class="nav-bar-item" >Services</span> 
-      <span class="nav-bar-item">About Us</span>
-      <span class="nav-bar-item">Contact Us</span>
-    </nav>
+      <h2>Culley & McAlpine</h2>
+      <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Services
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Residential Property</a>
+            <a href="#">Wills, Power of Attorney & Executry</a>
+            <a href="#">Family law </a>
+            <a href="#">Child Law </a>
+            <a href="#">Reparation/Personal Injury</a>
+            <a href="#">Representation in Criminal Court</a>
+          </div>
+        </div>
+      </div>
     </header>
 
     <main class="main">
-<div class="main-grid">
-  
-</div>
+      <div class="main-image">
+        <img src="./assets/header-img.jpg" alt="header image" />
+      </div>
+      <div class="main-grid">
+        <div class="intro">
+          <h3>Welcome to Culley & McAlpine</h3>
+          <p>
+            We are one of the leading Solicitors firms based in Perth, Scotland.
+          </p>
+          <p>
+            The Firm was founded 2000 and the present team of solicitors have in
+            excess of 100 years’ experience within the legal sector. A large
+            portion of our work is a result of referrals from others, however,
+            we pride ourselves on the fact that we have many repeat clients. We
+            do our best to ensure the highest standard of care and will tailor
+            our service to do what is best for you.
+          </p>
+        </div>
+        <div class="group-image">
+          <img
+            src="./assets/group.jpg"
+            alt="group"
+            height="400px"
+            width="550px"
+          />
+        </div>
+      </div>
     </main>
+
+    <section class="how-to-find">
+      <h3>How to find us</h3>
+      <div class="google-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2208.2216793838434!2d-3.4283305999999896!3d56.39500100000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48863b110be51be5%3A0x53a57647bc371ba3!2sCulley%20%26%20McAlpine!5e0!3m2!1sen!2suk!4v1724323271098!5m2!1sen!2suk"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
 
     <footer class="home-page-footer"></footer>
   </body>
