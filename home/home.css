@@ -52,6 +52,11 @@ h2 {
   padding: 14px 16px;
 }
 
+button{
+border: none;
+background-color: non;
+}
+
 .navbar a:hover, .dropdown:hover .dropbtn, .dropdown-content a:hover {
   background-color: var(--accent-color);
 }
