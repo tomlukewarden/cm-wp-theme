@@ -1,38 +1,59 @@
 
+:root{
+  --background-color:#ebeadf;
+  --header-color:#2c3166;
+  --text-color:#17171a;
+  --header-text-color:#ebeadf;
+  --accent-color:#826d1f;
+  --button-color:white;
+  --button-hover:rgb(143, 126, 113);
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color:var(--background-color);
+}
+
 
 /* header */
 header {
   display: grid;
-  grid-template-columns: 300px 280px;
-  grid-template-areas: "Logo Nav";
-  margin: 30px;
-  background-color: rgb(223, 196, 196);
+  grid-template-columns: 300px 1fr 300px;
+  grid-template-areas: "Logo Nav Socials";
+  padding: 30px;
+  background-color: var(--header-color);
 }
-
 
 h2 {
   grid-area: Logo;
+  color: var(--header-text-color);
 }
 
 /* navbar */
 .navbar {
   grid-area: Nav;
-
+  justify-content: center;
   overflow: hidden;
 }
 
-.navbar a, .dropdown .dropbtn, .dropdown-content a {
+.navbar a, .dropdown .dropbtn, .dropdown-content a, button {
   float: left;
   font-size: 16px;
   text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
   display: block;
   color: black;
 }
 
+
+.dropdown-content a,  button{
+  padding: 14px 16px;
+}
+
 .navbar a:hover, .dropdown:hover .dropbtn, .dropdown-content a:hover {
-  background-color: red;
+  background-color: var(--accent-color);
 }
 
 .dropdown {
@@ -47,6 +68,10 @@ h2 {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+}
+
+.dropdown-content ul{
+  list-style: none;
 }
 
 .dropdown:hover .dropdown-content {
