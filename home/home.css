@@ -89,6 +89,11 @@ text-align: center;
 .main-grid{
   display: grid;
   grid-template-columns: repeat(2, 500px);
+  margin-left: 400px;
+}
+
+.intro{
+ margin-right: 20px;
 }
 
 /* get in touch */
@@ -114,6 +119,10 @@ text-align: center;
 .contact-item{
   display: grid;
   grid-template-columns: 40px 100px ;
+}
+
+iframe{
+  width: 100%;
 }
 
 /* footer */
