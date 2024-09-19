@@ -20,8 +20,8 @@ body{
 /* header */
 header {
   display: grid;
-  grid-template-columns: 300px 1fr 300px;
-  grid-template-areas: "Logo Nav Socials";
+  grid-template-columns: 300px 1fr;
+  grid-template-areas: "Logo Nav";
   padding: 30px;
   background-color: var(--header-color);
 }
@@ -34,31 +34,27 @@ h2 {
 /* navbar */
 .navbar {
   grid-area: Nav;
-  justify-content: center;
   overflow: hidden;
 }
 
-.navbar a, .dropdown .dropbtn, .dropdown-content a, button {
+.navbar a, .dropdown .dropbtn, button {
   float: left;
   font-size: 16px;
   text-align: center;
   text-decoration: none;
   display: block;
-  color: black;
-}
-
-
-.dropdown-content a,  button{
-  padding: 14px 16px;
+  color: var(--header-text-color);
 }
 
 button{
 border: none;
-background-color: non;
+background-color: rgba(0, 0, 0, 0);
+padding: 20px;
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn, .dropdown-content a:hover {
-  background-color: var(--accent-color);
+  color: var(--accent-color);
+  text-decoration: underline;
 }
 
 .dropdown {
@@ -70,6 +66,7 @@ background-color: non;
   display: none;
   position: absolute;
   background-color: #f9f9f9;
+  color: black;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -85,14 +82,9 @@ background-color: non;
 
 /* main */
 main{
-  align-self: center;
+  width: 100%;
+text-align: center;
 }
-
-.main-image{
-  object-fit: cover;
-}
-
-
 
 .main-grid{
   display: grid;
@@ -128,4 +120,15 @@ main{
 .home-page-footer{
   text-align: center;
   border: 2px solid;
+  background-color: var(--header-color);
+  color: var(--header-text-color);
+}
+
+.home-page-footer a{
+  color: var(--header-text-color);
+}
+
+.home-page-footer a:visited{
+  text-decoration: none;
+  color: var(--header-text-color);
 }
