@@ -66,7 +66,6 @@ padding: 20px;
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  color: black;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -74,6 +73,7 @@ padding: 20px;
 
 .dropdown-content ul{
   list-style: none;
+  color: var(--accent-color);
 }
 
 .dropdown:hover .dropdown-content {
@@ -89,37 +89,69 @@ text-align: center;
 .main-grid{
   display: grid;
   grid-template-columns: repeat(2, 500px);
-  margin-left: 400px;
-}
-
-.intro{
- margin-right: 20px;
+  margin-right: 100px;
+  margin-left: 210px;
+  column-gap: 200px;
 }
 
 /* get in touch */
 
-.get-in-touch-grid{
+.get-in-touch-grid {
   display: grid;
-  grid-template-columns: repeat(3, 90px);
-  gap: 250px;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 50px; 
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
-.contact-card{
-  border: 2px solid;
-  width: 200px;
-  padding: 50px;
+.contact-card {
+  border: 2px solid var(--accent-color);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  width: 250px;
+  height: 300px; 
+  padding: 30px;
+  border-radius: var(--border-radius);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform var(--transition-time), box-shadow var(--transition-time);
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
 }
 
-.contact-grid{
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the contact item grid */
+.contact-grid {
   display: grid;
   grid-template-rows: repeat(3, 40px);
   gap: 40px;
 }
 
-.contact-item{
+.contact-item {
   display: grid;
-  grid-template-columns: 40px 100px ;
+  grid-template-columns: 40px 1fr;
+  align-items: center;
+  gap: 10px;
+  color: var(--accent-color);
 }
+
+/* Style for icons in the contact item */
+.contact-item img, .contact-item svg {
+  width: 40px;
+  height: 40px;
+  fill: var(--accent-color);
+}
+
+.contact-item:hover {
+  color: var(--button-hover);
+}
+
 
 iframe{
   width: 100%;
