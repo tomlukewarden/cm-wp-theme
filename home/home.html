@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8" />
@@ -7,120 +7,131 @@
   <title>Culley & McAlpine</title>
   <meta name="description" content="solicitor website" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="home.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="home.css">
 </head>
 
 <body>
-  <!-- HEADER -->
-  <header class="home-page-header">
-    <h2>Culley & McAlpine</h2>
-
-    <!-- NAVIGATION-->
-    <div class="navbar">
-      <button><a href="home.html">Home</a></button>
-      <button><a href="../about/about.html">About Us</a></button>
-      <button><a href="../contact/contact.html">Contact Us</a></button>
-      <div class="dropdown">
-        <button class="dropbtn">
-          Services
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <ul>
-            <li><a href="#">Residential Property</a></li>
-            <li><a href="#">Wills, Power of Attorney & Executry</a></li>
-            <li><a href="#">Family law </a></li>
-            <li><a href="#">Child Law </a></li>
-            <li><a href="#">Reparation/Personal Injury</a></li>
-            <a href="#">Representation in Criminal Court</a></li>
-          </ul>
-        </div>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark mb-5">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Culley & McAlpine</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </div>
-  </header>
+  </nav>
 
-  <!-- MAIN -->
-  <main class="main">
-    <div class="main-image">
-      <img src="./assets/header-img.jpg" alt="header image" />
-    </div>
-    <!-- MAIN CONTENT -->
-    <div class="main-grid">
-      <div class="intro">
+  <!-- Main Content -->
+  <main class="container my-5">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <img src="./assets/header-img.jpg" alt="header image" class="img-fluid rounded">
+      </div>
+      <div class="col-md-6">
         <h3>Welcome to Culley & McAlpine</h3>
-        <p>
-          We are one of the leading Solicitors firms based in Perth, Scotland.
-        </p>
-        <p>
-          The Firm was founded 2000 and the present team of solicitors have in
-          excess of 100 years experience within the legal sector. A large
-          portion of our work is a result of referrals from others, however,
-          we pride ourselves on the fact that we have many repeat clients. We
-          do our best to ensure the highest standard of care and will tailor
-          our service to do what is best for you.
-        </p>
-      </div>
-      <div class="group-image">
-        <img src="./assets/group.jpg" alt="group" height="400px" width="550px" />
+        <p>We are one of the leading Solicitors firms based in Perth, Scotland.</p>
+        <p>The Firm was founded in 2000, and our current team of solicitors has over 100 years of experience. Much of our work comes from referrals and repeat clients. We pride ourselves on delivering the highest standard of care and tailoring our services to best meet your needs.</p>
       </div>
     </div>
   </main>
 
-  <!-- GET IN TOUCH -->
-  <section class="get-in-touch">
-    <h3>Heres how to get in touch</h3>
-    <div class="get-in-touch-grid">
-      <!-- OPENING TIMES -->
-      <div class="contact-card">
-        <h4>Open Monday to Friday</h4>
-        <p>9AM-1PM</p>
-        <p><strong>CLOSED 1PM-2PM</strong></p>
-        <p>2PM-5PM</p>
-      </div>
-      <!-- CONTACT INFORMATION -->
-      <div class="contact-card contact-grid">
-        <div class="contact-item">
-          <img src="./assets/telephone.png" alt="telephone" width="20px" />
-          <p>01738 626644</p>
+  <!-- Get in touch -->
+  <section class="bg-light py-5">
+    <div class="container">
+      <h3 class="text-center mb-4">Here's how to get in touch</h3>
+      <div class="row text-center g-4">
+        <!-- Opening Times -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <h4>Open Monday to Friday</h4>
+              <p>9am-1pm</p>
+              <p><strong>CLOSED 1pm-2pm</strong></p>
+              <p>2pm-5pm</p>
+            </div>
+          </div>
         </div>
-        <div class="contact-item">
-          <img src="./assets/fax.png" alt="fax" width="35px" />
-          <p>01738 625511</p>
+        <!-- Contact Information -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <h4>Contact Information</h4>
+              <div class="d-flex justify-content-center align-items-center">
+                <img src="./assets/telephone.png" alt="telephone" width="20px" class="me-2" />
+                <p>01738 626644</p>
+              </div>
+              <div class="d-flex justify-content-center align-items-center">
+                <img src="./assets/fax.png" alt="fax" width="20px" class="me-2" />
+                <p>01738 625511</p>
+              </div>
+              <div class="d-flex justify-content-center align-items-center">
+                <img src="./assets/mail.png" alt="email" width="20px" class="me-2" />
+                <p>enquiries@culleymcalpine.co.uk</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="contact-item">
-          <img src="./assets/mail.png" alt="email" width="30px" />
-          <p>enquires@culleymcalpine.co.uk</p>
+        <!-- Address -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <h4>Address</h4>
+              <p>40-42 South Street</p>
+              <p>Perth</p>
+              <p>PH2 8PD</p>
+            </div>
+          </div>
         </div>
-      </div>
-      <!-- ADDRESS -->
-      <div class="contact-card">
-        <h4>Address:</h4>
-        <p>40-42 South Street</p>
-        <p>Perth</p>
-        <p>PH2 8PD</p>
       </div>
     </div>
   </section>
 
-  <!-- HOW TO FIND US -->
-  <section class="how-to-find">
-    <h3>How to find us</h3>
-    <!-- GOOGLE MAP -->
-    <div class="google-map">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2208.2216793838434!2d-3.4283305999999896!3d56.39500100000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48863b110be51be5%3A0x53a57647bc371ba3!2sCulley%20%26%20McAlpine!5e0!3m2!1sen!2suk!4v1724323271098!5m2!1sen!2suk"
-        width="600" height="450" style="border: 0" allowfullscreen loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <!-- How to find us -->
+  <section class="py-5">
+    <div class="container">
+      <h3 class="text-center mb-4">How to find us</h3>
+      <div class="ratio ratio-16x9">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2208.2216793838434!2d-3.4283305999999896!3d56.39500100000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48863b110be51be5%3A0x53a57647bc371ba3!2sCulley%20%26%20McAlpine!5e0!3m2!1sen!2suk!4v1724323271098!5m2!1sen!2suk"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="home-page-footer">
-    <p>© 2024 Culley & McAlpine Solicitors </p>
-    <p>Website by <a href="https://github.com/tomlukewarden">Tom Warden</a></p>
+  <!-- Footer -->
+  <footer class="text-light text-center py-3">
+    <p>© 2024 Culley & McAlpine Solicitors</p>
+    <p>Website by <a href="https://github.com/tomlukewarden" class="text-white">Tom Warden</a></p>
   </footer>
-</body>
 
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kQtW33rZJAHjgefvhyyzcGF9akm4VYa8UQ17M5mSbFq2SK1QKltL01E3r1BIp3Uq" crossorigin="anonymous"></script>
+</body>
 </html>
