@@ -2,3 +2,7 @@ nav,
 footer{
   background-color: #003366;
 }
+
+nav img{
+  border-radius: 14px;
+ }
