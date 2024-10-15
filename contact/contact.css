@@ -1,7 +1,20 @@
 nav,
-footer{
+footer {
   background-color: #003366;
 }
-nav img{
+
+nav img {
   border-radius: 14px;
- }
+}
+
+.form-section {
+  margin-top: 20px;
+}
+
+.map-section {
+  margin-top: 40px;
+}
+
+.text-light a {
+  color: #ffffff;
+}
