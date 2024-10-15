@@ -18,3 +18,9 @@ nav img {
 .text-light a {
   color: #ffffff;
 }
+
+form{
+  border: #003366 2px solid;
+  border-radius: 13px;
+  padding: 20px;
+}
