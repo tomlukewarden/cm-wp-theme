@@ -16,7 +16,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="../home/home.html">
-                <img class="logo" src="../home/assets/thumbnail_image001.png" alt="Culley & McAlpine Logo">
+                <img class="logo img-fluid" src="../home/assets/thumbnail_image001.png" alt="Culley & McAlpine Logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,10 +36,8 @@
                     <li class="nav-item">
                         <a class="nav-link" href="../meet-the-team/meet-the-team.html">Meet the Team</a>
                     </li>
-                    <li class="nav-item ">
-                        <a class="nav-link " href="../services/services.html" role="button">
-                            Services
-                        </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../services/services.html">Services</a>
                     </li>
                 </ul>
             </div>
@@ -47,43 +45,52 @@
     </nav>
 
     <!-- Main Content -->
-    <div class="clearfix m-5">
-        <img src="./assets/culleymcalpineoffice.jpg" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-12 col-md-6 mb-4 mb-md-0">
+                <img src="./assets/culleymcalpineoffice.jpg" class="img-fluid rounded" alt="Culley & McAlpine Office">
+            </div>
+            <div class="col-12 col-md-6">
+                <p>
+                    The majority of our solicitors have been practising in Perth for the majority, if not all, of their
+                    legal careers. We are driven by what is in our clients’ best interests and will always try to resolve
+                    matters in a quick and efficient manner. We do realise clients often have to see solicitors at a time
+                    which is difficult or stressful.
+                </p>
+                <p>
+                    We have both private paying clients and legal aid clients.  We will always assess your entitlement to
+                    legal aid. Legal aid is offered for Family Law, Criminal Court work, Wills, Power of Attorney and may
+                    cover other civil matters.
+                </p>
+                <p>
+                    We also offer a free 15-minute consultation to assess if you qualify for Legal Aid. This is a great
+                    opportunity for clients to find out if their problem requires a solicitor and for us to advise on the
+                    best way to proceed and if you may be entitled to Legal Aid for the work.
+                </p>
+            </div>
+        </div>
 
-        <p>
-            The majority of our solicitors have been practising in Perth for the majority, if not all, of their legal
-            careers. We are driven by what is in our clients’ best interests and will always try to resolve matters in a
-            quick and efficient manner. We do realise clients often have to see solicitors at a time which is difficult
-            or stressful.
-        </p>
-        <p>
-            We have both private paying clients and legal aid clients.  We will always assess your entitlement to legal
-            aid. Legal aid is offered for Family Law, Criminal Court work, Wills, Power of Attorney and may cover other
-            civil matters.
-        </p>
-        <p>
-            We also offer a free 15-minute consultation to asses if you qualify for Legal Aid. This is a great
-            opportunity for clients to find out if their problem requires a solicitor and for us to advise on the best
-            way to proceed and if you may be entitled to Legal Aid for the work.
-        </p>
-
-        <!-- Card Section under Content -->
-        <div class="d-flex gap-5 mt-4">
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">We Offer Legal Aid</h5>
-                    <p class="card-text">The Scottish Legal Aid Board administer publicly funded legal assistance and
-                        advise Scottish Ministers on its strategic development for the benefit of society.</p>
-                    <a href="https://www.slab.org.uk" class="btn btn-primary">Find out more</a>
+        <!-- Card Section -->
+        <div class="row gap-4 mt-4">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">We Offer Legal Aid</h5>
+                        <p class="card-text">The Scottish Legal Aid Board administer publicly funded legal assistance and
+                            advise Scottish Ministers on its strategic development for the benefit of society.</p>
+                        <a href="https://www.slab.org.uk" class="btn btn-primary">Find out more</a>
+                    </div>
                 </div>
             </div>
 
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Digby Brown Referral Scheme</h5>
-                    <p class="card-text">Learn about the process of making a claim and funding your case.</p>
-                    <a href="https://www.digbybrown.co.uk/compensate-network-case-studies" class="btn btn-primary">Find
-                        out more</a>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Digby Brown Referral Scheme</h5>
+                        <p class="card-text">Learn about the process of making a claim and funding your case.</p>
+                        <a href="https://www.digbybrown.co.uk/compensate-network-case-studies" class="btn btn-primary">Find
+                            out more</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -95,8 +102,10 @@
         <p>Website by <a href="https://github.com/tomlukewarden" class="text-white">Tom Warden</a></p>
     </footer>
 
-<!-- Javascript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
+</html>
 
 </html>
