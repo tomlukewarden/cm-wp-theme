@@ -45,3 +45,9 @@ body {
     border-radius: 60%;
     padding: 5px;
   }
+
+  .service{
+    background-color: #e2e2e2;
+    padding: 30px;
+    border-radius: 10%;
+  }
