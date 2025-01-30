@@ -37,11 +37,17 @@ body {
     object-fit: cover;
   }
 
+  .prev-page img:hover,
+  .next-page img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px;
+  }
+
   .prev-page img,
   .next-page img {
     background-color: #003366;
     cursor: pointer;
-    border: #003366, 1px, solid;
+    border: #cacaca, 1px, solid;
     border-radius: 60%;
     padding: 5px;
   }
