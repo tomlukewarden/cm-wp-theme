@@ -6,3 +6,10 @@ footer{
 nav img{
   border-radius: 14px;
  }
+
+ .border{
+  border: #adadad solid 3px;
+  background-color: #e0e0e0;
+  width: 500px;
+  padding: 30px;
+ }
